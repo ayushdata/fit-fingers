@@ -1,4 +1,8 @@
-# fit-fingers
+# Fit Fingers
+
+## Requirements
+- python
+- pip
 
 ## Installation
 First, clone this repository.
