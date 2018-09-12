@@ -10,30 +10,30 @@ $ cd fit-fingers
 Create a virtual environment and activate it.
 For Windows:
 ```
-pip install virtualenv
-virtualenv venv
-venv\Scripts\activate
+$ pip install virtualenv
+$ virtualenv venv
+$ venv\Scripts\activate
 ```
 
 Afterwards, install all the required files:
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Configure the application for flask.
 ```
-set FLASK_APP=application.py
-set FLASK_DEBUG=1
+$ set FLASK_APP=application.py
+$ set FLASK_DEBUG=1
 ```
 
 Set the API KEY for embedding Google Maps in the application
 ```
-set API_KEY=YOUR_API_KEY
+$ set API_KEY=YOUR_API_KEY
 ```
 
 Running the web application
 ```
-python -m flask run
+$ python -m flask run
 ```
 
 To see your application running, go to:
