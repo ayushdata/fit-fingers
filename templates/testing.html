@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}
+    Testing
+{% endblock %}
+{% block head %}
+<script>
+    var timing = "{{ timing }}";
+</script>
+<script src="static/script.js"> </script>
+{% endblock %}
+{% block body %}
+    <div id="container-jumbotron" class="container">
+        <div id="jumbotron1" class="jumbotron">
+            <h3 id="jumbo-content"> </h3>
+        </div>
+        <div class="form-group">
+            <input id="typer" autofocus autocomplete="off" type="text" class="form-control">
+        </div>
+    </div>
+    <div id="btn-timer" align="center">
+        <div id="retrybutton">
+            <button type="submit" id="retry" name="retry" class="btn btn-primary btn-retry">Retry! &#x21ba;</button>
+        </div>
+        {% if timing == "one" %}
+        <div id="timer">60</div>
+        {% elif timing == "two" %}
+        <div id="timer">120</div>
+        {% endif %}
+    </div>
+{% endblock %}

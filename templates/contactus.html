@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Contact us
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="static/contactus.css">
+{% endblock %}
+
+{% block body %}
+    <!--Jumbotron for displaying map on contact us page-->
+    <div class="container">
+        <div id="jumbotron1" class="jumbotron">
+            <div id="map">
+            </div>
+        </div>
+    </div>
+
+    <!--Jumbotron to show developer's details-->
+    <div class="container">
+        <div id="jumbotron2"  align="center" class="jumbotron">
+            <h3>Developer: Ayush Agarwal</h3>
+            <h3>Computer Science and Engineering Student at Amity University, Noida (India)</h3>
+            <h3>GitHub: <a target="_blank" href="https://github.com/Ayush-A" style="color: #000;" title="Ayush-A">github.com/Ayush-A</a></h3>
+        </div>
+    </div>
+
+    <!--Load javascript for contactus and google maps-->
+    <script src="static/contactus.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ API_KEY }}&callback=myMap"></script>
+{% endblock %}

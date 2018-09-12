@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+#container-game{
+    margin-top: 8%;
+    width: 70%;
+}
+.jumbotron{
+    height: 70%;
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+}
+h2, h5{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+}
+hr{
+    visibility: hidden;
+}
+#score, #time, hr{
+    color: white;
+}
+#score, #calcscore{
+    font-family: 'Ubuntu', sans-serif;
+    float: left;
+    margin-left: 20px;
+}
+#time, #calctime{
+    font-family: 'Ubuntu', sans-serif;
+    float: right;
+    margin-right: 20px;
+}
+.jumbotron .buttonn{    
+    margin-top: 8%;
+    width: 93%;
+}
+input[type="button"]{
+    font-family: 'Ubuntu', sans-serif;
+    transform: scale(1.5);
+    border-radius: 7px;
+    position: absolute;
+
+}
+#calctime, #calcscore{
+    color: rgb(221, 140, 140);
+}
+#scoretime{
+    display: inline;
+}
+.jumbotron .fillwords{
+    text-align: center;
+    margin-top: 100px;
+}
+.words{
+    color: #eeff02;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Noto Serif', 'serif'; */
+    font-size: 65px;
+}

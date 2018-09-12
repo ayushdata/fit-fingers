@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %}
+    Homepage
+{% endblock %}
+{% block body %}
+    <div id="container-ff" class="container" style="clear: both">
+        <h2 id="fingers">Fingers</h2>
+        <h2 id="fit">Fit</h3>
+    </div>
+    <hr style="visibility: hidden;">
+    <div id="container-grid" align="center" style="margin-top: 150px;" class="container">
+        <form method="POST" action="{{ url_for('testing') }}">
+            <div id="jumbotron-grid" class="jumbotron">
+            <div align="center">
+                <h2 class="text-custom">Duration</h2>
+                <hr>
+                    <div class="form-check" align="center">
+                        <input class="form-check-input" type="radio" name="timing" id="exampleRadios1" value="one">
+                        <label class="form-check-label" for="exampleRadios1">
+                            1 minute
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="timing" id="exampleRadios2" value="two">
+                        <label class="form-check-label" for="exampleRadios2">
+                            2 minute
+                        </label>
+                    </div>
+                <hr>
+            </div>
+        </div>
+            <button type="submit" align="center" class="btn btn-primary">Go!</button>
+        </form>
+    </div>
+{% endblock %}

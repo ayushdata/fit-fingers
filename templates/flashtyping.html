@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}
+    Flash Typing
+{% endblock %}
+{% block head %}
+<script src="static/flashgame.js"></script>
+<link rel="stylesheet" href="static/styleflash.css">
+{% endblock %}
+{% block body %}
+    <div id="container-game" class="container">
+        <div id="jumbotron-game" class="jumbotron">
+            <h2>&#128522; Welcome to Flash Typing Game &#128522;</h2>
+            <h5>Type your fingers out.</h5>
+            <div id="scoretime">
+                <div id="fillscore">
+                    <h3 id="score">Score: </h3>
+                    <h3 id="calcscore">0</h3>
+                </div>
+                <div id="filltime">
+                    <h3 id="calctime">60 sec</h3>
+                    <h3 id="time">Time: </h3>
+                </div>
+            </div>
+            <div class="fillwords">
+                <p class="words">Press any key to begin!</p>
+            </div>
+            <hr>
+            <p class="buttonn">
+                <input type="button" value="Retry" id="retry">
+            </p>
+        </div>
+    </div>
+{% endblock %}
