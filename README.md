@@ -2,13 +2,13 @@
 
 ## Application
 ![alt text](https://github.com/ayushdata/fit-fingers/blob/master/screenshots/selection.png)
-Homepage
+-> **Homepage** <-
 
 ![alt text](https://github.com/ayushdata/fit-fingers/blob/master/screenshots/typingtest.png)
-Typing test
+-> **Typing test** <-
 
 ![alt text](https://github.com/ayushdata/fit-fingers/blob/master/screenshots/flashgame.png)
-Flash typing
+-> **Flash typing** <-
 
 ## Requirements
 - python
