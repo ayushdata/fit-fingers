@@ -1,5 +1,15 @@
 # Fit Fingers
 
+## Application
+![alt text](https://github.com/ayushdata/fit-fingers/blob/master/screenshots/selection.png)
+Homepage
+
+![alt text](https://github.com/ayushdata/fit-fingers/blob/master/screenshots/typingtest.png)
+Typing test
+
+![alt text](https://github.com/ayushdata/fit-fingers/blob/master/screenshots/flashgame.png)
+Flash typing
+
 ## Requirements
 - python
 - pip
