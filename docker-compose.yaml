@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  myapp:
+    image: python:3.9
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: sh -c "pip install --no-cache-dir -r requirements.txt && python -m flask run"
+    environment:
+      - FLASK_APP=application.py
+      - FLASK_DEBUG=1
+      - API_KEY=MY_API_KEY
+    ports:
+      - "5000:5000"
