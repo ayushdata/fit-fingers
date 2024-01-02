@@ -7,7 +7,7 @@ app = Flask("__name__")
 
 
 # Set the API KEY of Javascript Maps API
-if not os.environ.get("API_KEY"):
+if not os.environ.get("API_KEY") or os.environ.get("API_KEY")=="MY_API_KEY":
     raise RuntimeError("API_KEY not set")
 
 
